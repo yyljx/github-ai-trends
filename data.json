@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-01-18 16:59",
+  "update_time": "2026-01-18 17:53",
   "repos": [
     {
       "name": "superpowers",
@@ -11,8 +11,8 @@
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "Shell",
       "stars_today": 1422,
-      "total_stars": 27813,
-      "forks": 2073,
+      "total_stars": 27862,
+      "forks": 2079,
       "url": "https://github.com/obra/superpowers",
       "owner": "obra",
       "avatar_url": "https://github.com/obra.png?size=80",
@@ -23,7 +23,7 @@
       "homepage": "",
       "license": "MIT",
       "open_issues": 76,
-      "watchers": 27813
+      "watchers": 27862
     },
     {
       "name": "AionUi",
@@ -35,25 +35,19 @@
       "problem_solved": "快速上手 AI 相关开发",
       "language": "TypeScript",
       "stars_today": 605,
-      "total_stars": 5107,
+      "total_stars": 5135,
       "forks": 403,
       "url": "https://github.com/iOfficeAI/AionUi",
       "owner": "iOfficeAI",
       "avatar_url": "https://github.com/iOfficeAI.png?size=80",
-      "topics": [
-        "acp",
-        "ai",
-        "ai-agent",
-        "banana",
-        "chat"
-      ],
-      "readme_excerpt": "✨ What Can AionUi Do? · 🤔 Why Choose AionUi? · ✨ Core Features · 🚀 Quick Start · 📖 Detailed Usage Guide · 💬 Community _If you have installed command-line tools like Gemini CLI, Claude Code, CodeX, Qwen Code, Goose AI, Augment Code, AionUi can automatically detect them and provide a unified...",
-      "created_at": "2025-08-07",
-      "updated_at": "2026-01-18",
-      "homepage": "https://www.aionui.com",
-      "license": "Apache-2.0",
-      "open_issues": 23,
-      "watchers": 5107
+      "topics": [],
+      "readme_excerpt": "",
+      "created_at": "",
+      "updated_at": "",
+      "homepage": "",
+      "license": "",
+      "open_issues": 0,
+      "watchers": 0
     },
     {
       "name": "langextract",
@@ -65,7 +59,7 @@
       "problem_solved": "快速接入和使用大语言模型",
       "language": "Python",
       "stars_today": 425,
-      "total_stars": 21723,
+      "total_stars": 21741,
       "forks": 1510,
       "url": "https://github.com/google/langextract",
       "owner": "google",
@@ -83,7 +77,7 @@
       "homepage": "https://pypi.org/project/langextract/",
       "license": "Apache-2.0",
       "open_issues": 91,
-      "watchers": 21723
+      "watchers": 21741
     },
     {
       "name": "puck",
@@ -95,19 +89,19 @@
       "problem_solved": "快速上手 AI 相关开发",
       "language": "TypeScript",
       "stars_today": 336,
-      "total_stars": 11503,
+      "total_stars": 11515,
       "forks": 793,
       "url": "https://github.com/puckeditor/puck",
       "owner": "puckeditor",
       "avatar_url": "https://github.com/puckeditor.png?size=80",
       "topics": [],
-      "readme_excerpt": "_The visual editor for React_ Documentation • Demo • Discord • Contributing ⭐️ Enjoying Puck? Please leave a star! Puck is a modular, open-source visual editor for React.js. You can use Puck to build custom drag-and-drop experiences with your own application and React components. Because Puck is...",
-      "created_at": "2023-06-02",
-      "updated_at": "2026-01-18",
-      "homepage": "https://puckeditor.com",
-      "license": "MIT",
-      "open_issues": 179,
-      "watchers": 11503
+      "readme_excerpt": "",
+      "created_at": "",
+      "updated_at": "",
+      "homepage": "",
+      "license": "",
+      "open_issues": 0,
+      "watchers": 0
     }
   ]
 }
