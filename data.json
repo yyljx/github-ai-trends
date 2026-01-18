@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-01-18 23:00",
+  "update_time": "2026-01-19 00:00",
   "repos": [
     {
       "name": "AionUi",
@@ -11,8 +11,8 @@
       "problem_solved": "快速上手 AI 相关开发",
       "language": "TypeScript",
       "stars_today": 660,
-      "total_stars": 5331,
-      "forks": 416,
+      "total_stars": 5356,
+      "forks": 418,
       "url": "https://github.com/iOfficeAI/AionUi",
       "owner": "iOfficeAI",
       "avatar_url": "https://github.com/iOfficeAI.png?size=80",
@@ -29,7 +29,7 @@
       "homepage": "https://www.aionui.com",
       "license": "Apache-2.0",
       "open_issues": 24,
-      "watchers": 5331
+      "watchers": 5356
     },
     {
       "name": "langextract",
@@ -41,8 +41,8 @@
       "problem_solved": "快速接入和使用大语言模型",
       "language": "Python",
       "stars_today": 393,
-      "total_stars": 21840,
-      "forks": 1513,
+      "total_stars": 21867,
+      "forks": 1514,
       "url": "https://github.com/google/langextract",
       "owner": "google",
       "avatar_url": "https://github.com/google.png?size=80",
@@ -59,7 +59,7 @@
       "homepage": "https://pypi.org/project/langextract/",
       "license": "Apache-2.0",
       "open_issues": 91,
-      "watchers": 21840
+      "watchers": 21867
     },
     {
       "name": "LEANN",
@@ -71,7 +71,7 @@
       "problem_solved": "快速上手 AI 相关开发",
       "language": "Python",
       "stars_today": 144,
-      "total_stars": 8839,
+      "total_stars": 8855,
       "forks": 778,
       "url": "https://github.com/yichuan-w/LEANN",
       "owner": "yichuan-w",
@@ -89,7 +89,7 @@
       "homepage": "",
       "license": "MIT",
       "open_issues": 47,
-      "watchers": 8839
+      "watchers": 8855
     }
   ]
 }
