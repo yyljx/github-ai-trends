@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-01-18 22:13",
+  "update_time": "2026-01-18 23:00",
   "repos": [
     {
       "name": "AionUi",
@@ -11,8 +11,8 @@
       "problem_solved": "快速上手 AI 相关开发",
       "language": "TypeScript",
       "stars_today": 660,
-      "total_stars": 5292,
-      "forks": 412,
+      "total_stars": 5331,
+      "forks": 416,
       "url": "https://github.com/iOfficeAI/AionUi",
       "owner": "iOfficeAI",
       "avatar_url": "https://github.com/iOfficeAI.png?size=80",
@@ -29,7 +29,7 @@
       "homepage": "https://www.aionui.com",
       "license": "Apache-2.0",
       "open_issues": 24,
-      "watchers": 5292
+      "watchers": 5331
     },
     {
       "name": "langextract",
@@ -41,19 +41,25 @@
       "problem_solved": "快速接入和使用大语言模型",
       "language": "Python",
       "stars_today": 393,
-      "total_stars": 21827,
-      "forks": 1512,
+      "total_stars": 21840,
+      "forks": 1513,
       "url": "https://github.com/google/langextract",
       "owner": "google",
       "avatar_url": "https://github.com/google.png?size=80",
-      "topics": [],
-      "readme_excerpt": "",
-      "created_at": "",
-      "updated_at": "",
-      "homepage": "",
-      "license": "",
-      "open_issues": 0,
-      "watchers": 0
+      "topics": [
+        "gemini",
+        "gemini-ai",
+        "gemini-api",
+        "gemini-flash",
+        "gemini-pro"
+      ],
+      "readme_excerpt": "- Introduction - Why LangExtract? - Quick Start - Installation - API Key Setup for Cloud Models - Adding Custom Model Providers - Using OpenAI Models - Using Local LLMs with Ollama - More Examples - Romeo and Juliet Full Text Extraction - Medication Extraction - Radiology Report Structuring:...",
+      "created_at": "2025-07-08",
+      "updated_at": "2026-01-18",
+      "homepage": "https://pypi.org/project/langextract/",
+      "license": "Apache-2.0",
+      "open_issues": 91,
+      "watchers": 21840
     },
     {
       "name": "LEANN",
@@ -65,8 +71,8 @@
       "problem_solved": "快速上手 AI 相关开发",
       "language": "Python",
       "stars_today": 144,
-      "total_stars": 8827,
-      "forks": 776,
+      "total_stars": 8839,
+      "forks": 778,
       "url": "https://github.com/yichuan-w/LEANN",
       "owner": "yichuan-w",
       "avatar_url": "https://github.com/yichuan-w.png?size=80",
@@ -83,7 +89,7 @@
       "homepage": "",
       "license": "MIT",
       "open_issues": 47,
-      "watchers": 8827
+      "watchers": 8839
     }
   ]
 }
