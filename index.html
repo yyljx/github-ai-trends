@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 GitHub AI Trends - 每日精选</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a1a;
+            --bg-secondary: #12122a;
+            --bg-card: rgba(30, 30, 60, 0.6);
+            --bg-card-hover: rgba(40, 40, 80, 0.8);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0c0;
+            --text-muted: #6b6b8a;
+            --accent-purple: #8b5cf6;
+            --accent-blue: #3b82f6;
+            --accent-cyan: #06b6d4;
+            --accent-green: #22c55e;
+            --accent-orange: #f97316;
+            --accent-pink: #ec4899;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .bg-animation::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background:
+                radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(6, 182, 212, 0.1) 0%, transparent 40%);
+            animation: bgPulse 15s ease-in-out infinite;
+        }
+
+        @keyframes bgPulse {
+
+            0%,
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+
+            50% {
+                transform: scale(1.1) rotate(5deg);
+            }
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff 0%, #a78bfa 50%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .last-update {
+            margin-top: 16px;
+            padding: 8px 20px;
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .last-update .dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: var(--accent-green);
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(1.2);
+            }
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 16px 24px;
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+
+        /* Repo Card */
+        .repo-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 28px;
+            margin-bottom: 24px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .repo-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-1);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .repo-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px rgba(139, 92, 246, 0.25);
+            border-color: rgba(139, 92, 246, 0.4);
+        }
+
+        .repo-card:hover::before {
+            opacity: 1;
+        }
+
+        /* Card Header */
+        .repo-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .repo-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            background: var(--gradient-3);
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .repo-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .repo-title-area {
+            flex: 1;
+        }
+
+        .repo-name-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .repo-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .repo-name:hover {
+            color: var(--accent-purple);
+        }
+
+        .repo-rank-badge {
+            padding: 4px 10px;
+            background: var(--gradient-1);
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .repo-owner {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Hot Stats */
+        .hot-stats {
+            display: flex;
+            gap: 16px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .hot-stat {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+            padding: 6px 12px;
+            border-radius: 8px;
+        }
+
+        .hot-stat.fire {
+            background: rgba(249, 115, 22, 0.2);
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .hot-stat.stars {
+            background: rgba(234, 179, 8, 0.15);
+            color: #fbbf24;
+        }
+
+        .hot-stat.forks {
+            background: rgba(34, 197, 94, 0.15);
+            color: var(--accent-green);
+        }
+
+        .hot-stat.lang {
+            background: rgba(139, 92, 246, 0.15);
+            color: var(--accent-purple);
+        }
+
+        /* Description Section */
+        .repo-description-section {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 14px;
+            border-left: 3px solid var(--accent-cyan);
+        }
+
+        .repo-desc-cn {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        /* Meta Info Grid */
+        .repo-meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin: 16px 0;
+        }
+
+        .repo-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            font-size: 0.85rem;
+        }
+
+        .repo-meta-icon {
+            font-size: 1rem;
+        }
+
+        .repo-meta-label {
+            color: var(--text-muted);
+        }
+
+        .repo-meta-value {
+            color: var(--text-primary);
+            margin-left: auto;
+            font-weight: 500;
+        }
+
+        /* Topics */
+        .repo-topics {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin: 16px 0;
+        }
+
+        .topic-tag {
+            padding: 5px 12px;
+            background: rgba(139, 92, 246, 0.15);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 16px;
+            font-size: 0.8rem;
+            color: var(--accent-purple);
+            transition: all 0.2s;
+        }
+
+        .topic-tag:hover {
+            background: rgba(139, 92, 246, 0.25);
+        }
+
+        /* Action Buttons */
+        .repo-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .action-btn {
+            flex: 1;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .action-btn.primary {
+            background: var(--gradient-1);
+            color: white;
+        }
+
+        .action-btn.primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+        }
+
+        .action-btn.secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+
+        .action-btn.secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+        }
+
+        .action-btn.secondary.active {
+            background: rgba(234, 179, 8, 0.2);
+            color: #fbbf24;
+            border-color: rgba(234, 179, 8, 0.4);
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 60px;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent-purple);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Refresh Button */
+        .refresh-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .refresh-btn:hover {
+            transform: scale(1.1) rotate(180deg);
+            box-shadow: 0 15px 40px rgba(139, 92, 246, 0.6);
+        }
+
+        /* Search */
+        .search-box {
+            max-width: 500px;
+            margin: 20px auto 0;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 14px 20px 14px 48px;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .search-input:focus {
+            border-color: var(--accent-purple);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+        }
+
+        .clear-btn {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .stats-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .repo-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .repo-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-animation"></div>
+
+    <header class="header">
+        <h1>🚀 GitHub AI 每日精选</h1>
+        <p>深度解读最热门的 AI 开源项目，帮你快速了解前沿动态</p>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" class="search-input" placeholder="🔍 搜索项目名称、描述、领域..."
+                oninput="handleSearch(this.value)">
+            <span class="search-icon">🔍</span>
+            <button onclick="clearSearch()" id="clearSearchBtn" class="clear-btn">✕</button>
+        </div>
+        <div id="searchStats"
+            style="text-align: center; margin-top: 10px; font-size: 0.85rem; color: var(--text-secondary);"></div>
+
+        <div class="last-update">
+            <span class="dot"></span>
+            <span id="updateTime">加载中...</span>
+        </div>
+    </header>
+
+    <div class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-value" id="totalProjects">-</div>
+            <div class="stat-label">今日 AI 热门</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value" id="totalStarsToday">-</div>
+            <div class="stat-label">今日新增 Stars</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value" id="topGrowth">-</div>
+            <div class="stat-label">最高增长</div>
+        </div>
+    </div>
+
+    <div class="container" id="repoContainer">
+        <div class="loading">
+            <div class="loading-spinner"></div>
+            <p>正在获取 GitHub 趋势数据...</p>
+        </div>
+    </div>
+
+    <button class="refresh-btn" onclick="fetchData()" title="刷新数据">🔄</button>
+
+    <script>
+        // 从本地 data.json 加载数据 (GitHub Pages 静态部署)
+        const DATA_URL = './data.json';
+        let allRepos = [];
+
+        async function fetchData() {
+            const container = document.getElementById('repoContainer');
+
+            container.innerHTML = `
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    <p>正在加载数据...</p>
+                </div>
+            `;
+
+            try {
+                const response = await fetch(DATA_URL + '?t=' + Date.now());
+                if (!response.ok) throw new Error('数据文件未找到');
+
+                const data = await response.json();
+                allRepos = data.repos || [];
+                renderData(data);
+            } catch (error) {
+                console.error('Fetch error:', error);
+                container.innerHTML = `
+                    <div class="loading" style="padding: 40px;">
+                        <p style="font-size: 1.2rem; margin-bottom: 20px;">❌ ${error.message}</p>
+                        <p style="color: var(--text-secondary); margin-bottom: 20px;">数据尚未生成，请稍后重试</p>
+                        <button onclick="fetchData()" class="action-btn primary" style="max-width: 200px; margin: 0 auto;">
+                            🔄 重新加载
+                        </button>
+                    </div>
+                `;
+            }
+        }
+
+        function handleSearch(query) {
+            const clearBtn = document.getElementById('clearSearchBtn');
+            const statsEl = document.getElementById('searchStats');
+
+            if (query.trim()) {
+                clearBtn.style.display = 'block';
+                const filtered = filterRepos(query);
+                statsEl.textContent = `找到 ${filtered.length} 个相关项目`;
+                renderFilteredData(filtered);
+            } else {
+                clearBtn.style.display = 'none';
+                statsEl.textContent = '';
+                renderData({ repos: allRepos, update_time: '' });
+            }
+        }
+
+        function clearSearch() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('clearSearchBtn').style.display = 'none';
+            document.getElementById('searchStats').textContent = '';
+            renderData({ repos: allRepos, update_time: '' });
+        }
+
+        function filterRepos(query) {
+            const q = query.toLowerCase();
+            return allRepos.filter(repo => {
+                const name = (repo.name || '').toLowerCase();
+                const owner = (repo.owner || '').toLowerCase();
+                const desc = (repo.description || '').toLowerCase();
+                const descCn = (repo.description_cn || '').toLowerCase();
+                const domain = (repo.domain || '').toLowerCase();
+                const language = (repo.language || '').toLowerCase();
+                const topics = (repo.topics || []).map(t => t.toLowerCase());
+
+                return name.includes(q) ||
+                    owner.includes(q) ||
+                    desc.includes(q) ||
+                    descCn.includes(q) ||
+                    domain.includes(q) ||
+                    language.includes(q) ||
+                    topics.some(t => t.includes(q));
+            });
+        }
+
+        function renderFilteredData(repos) {
+            const container = document.getElementById('repoContainer');
+
+            if (repos.length === 0) {
+                container.innerHTML = `
+                    <div class="loading" style="padding: 40px;">
+                        <p style="font-size: 1.2rem; margin-bottom: 10px;">未找到相关项目</p>
+                        <p style="color: var(--text-secondary);">试试其他关键词吧</p>
+                    </div>
+                `;
+                return;
+            }
+
+            document.getElementById('totalProjects').textContent = repos.length;
+            const totalStars = repos.reduce((sum, r) => sum + (r.stars_today || 0), 0);
+            document.getElementById('totalStarsToday').textContent = formatNumber(totalStars);
+            const topGrowth = repos.length > 0 ? repos[0].stars_today : 0;
+            document.getElementById('topGrowth').textContent = '+' + formatNumber(topGrowth);
+
+            container.innerHTML = repos.map((repo, index) => renderRepoCard(repo, index)).join('');
+        }
+
+        function renderData(data) {
+            const repos = data.repos || [];
+            const container = document.getElementById('repoContainer');
+
+            document.getElementById('totalProjects').textContent = repos.length;
+            const totalStars = repos.reduce((sum, r) => sum + (r.stars_today || 0), 0);
+            document.getElementById('totalStarsToday').textContent = formatNumber(totalStars);
+            const topGrowth = repos.length > 0 ? repos[0].stars_today : 0;
+            document.getElementById('topGrowth').textContent = '+' + formatNumber(topGrowth);
+
+            const updateTimeEl = document.getElementById('updateTime');
+            if (data.update_time) {
+                updateTimeEl.textContent = `更新于 ${data.update_time}`;
+            } else {
+                updateTimeEl.textContent = `静态数据`;
+            }
+
+            container.innerHTML = repos.map((repo, index) => renderRepoCard(repo, index)).join('');
+        }
+
+        function toggleFavorite(repoUrl) {
+            let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+            const index = favorites.indexOf(repoUrl);
+
+            if (index > -1) {
+                favorites.splice(index, 1);
+                showToast('已取消收藏');
+            } else {
+                favorites.push(repoUrl);
+                showToast('已添加到收藏');
+            }
+
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+            updateFavoriteButtons();
+        }
+
+        function isFavorite(repoUrl) {
+            const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+            return favorites.includes(repoUrl);
+        }
+
+        function updateFavoriteButtons() {
+            document.querySelectorAll('.fav-btn').forEach(btn => {
+                const url = btn.dataset.url;
+                if (isFavorite(url)) {
+                    btn.innerHTML = '⭐ 已收藏';
+                    btn.classList.add('active');
+                } else {
+                    btn.innerHTML = '☆ 收藏';
+                    btn.classList.remove('active');
+                }
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 100px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: var(--accent-purple);
+                color: white;
+                padding: 12px 24px;
+                border-radius: 12px;
+                font-size: 0.9rem;
+                z-index: 1000;
+            `;
+            toast.textContent = message;
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transition = 'all 0.3s';
+                setTimeout(() => toast.remove(), 300);
+            }, 2000);
+        }
+
+        function renderRepoCard(repo, index) {
+            const avatarUrl = repo.avatar_url || `https://github.com/${repo.owner}.png?size=80`;
+            const topics = (repo.topics || []).slice(0, 5);
+            const favClass = isFavorite(repo.url) ? 'active' : '';
+            const favText = isFavorite(repo.url) ? '⭐ 已收藏' : '☆ 收藏';
+
+            return `
+                <div class="repo-card">
+                    <div class="repo-header">
+                        <div class="repo-avatar">
+                            <img src="${avatarUrl}" alt="${repo.owner}" onerror="this.style.display='none'">
+                        </div>
+                        <div class="repo-title-area">
+                            <div class="repo-name-row">
+                                <a href="${repo.url}" target="_blank" class="repo-name">${repo.name}</a>
+                                <span class="repo-rank-badge">#${index + 1} 热门</span>
+                            </div>
+                            <div class="repo-owner">by ${repo.owner}</div>
+                            <div class="hot-stats">
+                                <span class="hot-stat fire">🔥 今日 +${repo.stars_today || 0}</span>
+                                <span class="hot-stat stars">⭐ ${formatNumber(repo.total_stars)}</span>
+                                <span class="hot-stat forks">🍴 ${formatNumber(repo.forks || 0)}</span>
+                                <span class="hot-stat lang">🛠️ ${repo.language || 'Unknown'}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="repo-description-section">
+                        <div class="repo-desc-cn">
+                            📖 ${repo.description_cn || repo.description || 'No description provided.'}
+                        </div>
+                    </div>
+
+                    <div class="repo-meta-grid">
+                        <div class="repo-meta-item">
+                            <span class="repo-meta-icon">📂</span>
+                            <span class="repo-meta-label">领域</span>
+                            <span class="repo-meta-value">${repo.domain || 'AI 开源项目'}</span>
+                        </div>
+                        <div class="repo-meta-item">
+                            <span class="repo-meta-icon">👥</span>
+                            <span class="repo-meta-label">适用</span>
+                            <span class="repo-meta-value">${repo.target_audience || 'AI 开发者'}</span>
+                        </div>
+                        <div class="repo-meta-item">
+                            <span class="repo-meta-icon">💡</span>
+                            <span class="repo-meta-label">解决</span>
+                            <span class="repo-meta-value">${repo.problem_solved || '快速上手 AI 开发'}</span>
+                        </div>
+                        ${repo.license ? `
+                        <div class="repo-meta-item">
+                            <span class="repo-meta-icon">📄</span>
+                            <span class="repo-meta-label">许可</span>
+                            <span class="repo-meta-value">${repo.license}</span>
+                        </div>
+                        ` : ''}
+                    </div>
+
+                    ${topics.length > 0 ? `
+                    <div class="repo-topics">
+                        ${topics.map(t => `<span class="topic-tag">${t}</span>`).join('')}
+                    </div>
+                    ` : ''}
+
+                    <div class="repo-actions">
+                        <a href="${repo.url}" target="_blank" class="action-btn primary">🔗 GitHub 主页</a>
+                        <button onclick="toggleFavorite('${repo.url}')" class="action-btn secondary fav-btn ${favClass}" data-url="${repo.url}">${favText}</button>
+                        <button onclick="copyToClipboard('${repo.url}')" class="action-btn secondary" title="复制链接">📋 复制</button>
+                        ${repo.homepage ? `<a href="${repo.homepage}" target="_blank" class="action-btn secondary">🌐 官网</a>` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        function formatNumber(num) {
+            if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+            if (num >= 1000) return (num / 1000).toFixed(1) + 'k';
+            return num.toString();
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('✅ 链接已复制到剪贴板');
+            }).catch(() => {
+                const textarea = document.createElement('textarea');
+                textarea.value = text;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                showToast('✅ 链接已复制到剪贴板');
+            });
+        }
+
+        // Initial fetch
+        fetchData();
+    </script>
+</body>
+
+</html>
