@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-01-19 23:10",
+  "update_time": "2026-01-20 00:39",
   "repos": [
     {
       "name": "AionUi",
@@ -11,8 +11,8 @@
       "problem_solved": "快速上手 AI 相关开发",
       "language": "TypeScript",
       "stars_today": 1179,
-      "total_stars": 6524,
-      "forks": 510,
+      "total_stars": 6598,
+      "forks": 513,
       "url": "https://github.com/iOfficeAI/AionUi",
       "owner": "iOfficeAI",
       "avatar_url": "https://github.com/iOfficeAI.png?size=80",
@@ -23,13 +23,13 @@
         "banana",
         "chat"
       ],
-      "readme_excerpt": "✨ What Can AionUi Do? · 🤔 Why Choose AionUi? · ✨ Core Features · 🚀 Quick Start · 📖 Detailed Usage Guide · 💬 Community _If you have installed command-line tools like Gemini CLI, Claude Code, CodeX, Qwen Code, Goose AI, Augment Code, AionUi can automatically detect them and provide a unified...",
+      "readme_excerpt": "✨ What Can AionUi Do? · 🤔 Why Choose AionUi? · ✨ Core Features · 🚀 Quick Start · 📖 Detailed Usage Guide · 💬 Community _AionUi includes Gemini CLI built-in, ready to use out of the box with no extra installation. If you already have command-line tools like Gemini CLI, Claude Code, CodeX, Qwen Code,...",
       "created_at": "2025-08-07",
       "updated_at": "2026-01-19",
       "homepage": "https://www.aionui.com",
       "license": "Apache-2.0",
       "open_issues": 23,
-      "watchers": 6524
+      "watchers": 6598
     },
     {
       "name": "langextract",
@@ -41,8 +41,8 @@
       "problem_solved": "快速接入和使用大语言模型",
       "language": "Python",
       "stars_today": 621,
-      "total_stars": 22507,
-      "forks": 1553,
+      "total_stars": 22540,
+      "forks": 1555,
       "url": "https://github.com/google/langextract",
       "owner": "google",
       "avatar_url": "https://github.com/google.png?size=80",
@@ -59,7 +59,7 @@
       "homepage": "https://pypi.org/project/langextract/",
       "license": "Apache-2.0",
       "open_issues": 95,
-      "watchers": 22507
+      "watchers": 22540
     },
     {
       "name": "LEANN",
@@ -71,8 +71,8 @@
       "problem_solved": "快速上手 AI 相关开发",
       "language": "Python",
       "stars_today": 372,
-      "total_stars": 9199,
-      "forks": 799,
+      "total_stars": 9224,
+      "forks": 800,
       "url": "https://github.com/yichuan-w/LEANN",
       "owner": "yichuan-w",
       "avatar_url": "https://github.com/yichuan-w.png?size=80",
@@ -89,7 +89,7 @@
       "homepage": "",
       "license": "MIT",
       "open_issues": 44,
-      "watchers": 9199
+      "watchers": 9224
     }
   ]
 }
