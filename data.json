@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-01-20 20:48",
+  "update_time": "2026-01-21 00:01",
   "repos": [
     {
       "name": "AionUi",
@@ -11,8 +11,8 @@
       "problem_solved": "快速上手 AI 相关开发",
       "language": "TypeScript",
       "stars_today": 961,
-      "total_stars": 7366,
-      "forks": 558,
+      "total_stars": 7541,
+      "forks": 575,
       "url": "https://github.com/iOfficeAI/AionUi",
       "owner": "iOfficeAI",
       "avatar_url": "https://github.com/iOfficeAI.png?size=80",
@@ -23,13 +23,13 @@
         "banana",
         "chat"
       ],
-      "readme_excerpt": "✨ What Can AionUi Do? · 🤔 Why Choose AionUi? · ✨ Core Features · 🚀 Quick Start · 📖 Detailed Usage Guide · 💬 Community _AionUi includes Gemini CLI built-in, ready to use out of the box with no extra installation. If you already have command-line tools like Gemini CLI, Claude Code, CodeX, Qwen Code,...",
+      "readme_excerpt": "",
       "created_at": "2025-08-07",
       "updated_at": "2026-01-20",
       "homepage": "https://www.aionui.com",
       "license": "Apache-2.0",
-      "open_issues": 27,
-      "watchers": 7366
+      "open_issues": 28,
+      "watchers": 7541
     },
     {
       "name": "langextract",
@@ -41,8 +41,8 @@
       "problem_solved": "快速接入和使用大语言模型",
       "language": "Python",
       "stars_today": 566,
-      "total_stars": 22991,
-      "forks": 1581,
+      "total_stars": 23060,
+      "forks": 1585,
       "url": "https://github.com/google/langextract",
       "owner": "google",
       "avatar_url": "https://github.com/google.png?size=80",
@@ -59,7 +59,7 @@
       "homepage": "https://pypi.org/project/langextract/",
       "license": "Apache-2.0",
       "open_issues": 95,
-      "watchers": 22991
+      "watchers": 23060
     },
     {
       "name": "agent-lightning",
@@ -71,25 +71,19 @@
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "Python",
       "stars_today": 43,
-      "total_stars": 10546,
-      "forks": 865,
+      "total_stars": 10623,
+      "forks": 869,
       "url": "https://github.com/microsoft/agent-lightning",
       "owner": "microsoft",
       "avatar_url": "https://github.com/microsoft.png?size=80",
-      "topics": [
-        "agent",
-        "agentic-ai",
-        "llm",
-        "mlops",
-        "reinforcement-learning"
-      ],
-      "readme_excerpt": "The absolute trainer to light up AI agents. Join our Discord community to connect with other users and contributors. - Turn your agent into an optimizable beast with ZERO CODE CHANGE (almost)! 💤 - Build with ANY agent framework (LangChain, OpenAI Agent SDK, AutoGen, CrewAI, Microsoft Agent...",
-      "created_at": "2025-06-18",
-      "updated_at": "2026-01-20",
-      "homepage": "https://microsoft.github.io/agent-lightning/",
-      "license": "MIT",
-      "open_issues": 109,
-      "watchers": 10546
+      "topics": [],
+      "readme_excerpt": "",
+      "created_at": "",
+      "updated_at": "",
+      "homepage": "",
+      "license": "",
+      "open_issues": 0,
+      "watchers": 0
     }
   ]
 }
