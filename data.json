@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-01-22 00:01",
+  "update_time": "2026-01-22 12:01",
   "repos": [
     {
       "name": "agent-lightning",
@@ -10,9 +10,9 @@
       "target_audience": "AI 应用开发者、自动化工程师",
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "Python",
-      "stars_today": 514,
-      "total_stars": 11110,
-      "forks": 916,
+      "stars_today": 527,
+      "total_stars": 11244,
+      "forks": 922,
       "url": "https://github.com/microsoft/agent-lightning",
       "owner": "microsoft",
       "avatar_url": "https://github.com/microsoft.png?size=80",
@@ -25,11 +25,11 @@
       ],
       "readme_excerpt": "The absolute trainer to light up AI agents. Join our Discord community to connect with other users and contributors. - Turn your agent into an optimizable beast with ZERO CODE CHANGE (almost)! 💤 - Build with ANY agent framework (LangChain, OpenAI Agent SDK, AutoGen, CrewAI, Microsoft Agent...",
       "created_at": "2025-06-18",
-      "updated_at": "2026-01-21",
+      "updated_at": "2026-01-22",
       "homepage": "https://microsoft.github.io/agent-lightning/",
       "license": "MIT",
       "open_issues": 115,
-      "watchers": 11110
+      "watchers": 11244
     },
     {
       "name": "PageIndex",
@@ -40,9 +40,9 @@
       "target_audience": "AI 开发者和研究人员",
       "problem_solved": "快速上手 AI 相关开发",
       "language": "Python",
-      "stars_today": 110,
-      "total_stars": 5964,
-      "forks": 484,
+      "stars_today": 100,
+      "total_stars": 6165,
+      "forks": 488,
       "url": "https://github.com/VectifyAI/PageIndex",
       "owner": "VectifyAI",
       "avatar_url": "https://github.com/VectifyAI.png?size=80",
@@ -55,11 +55,11 @@
       ],
       "readme_excerpt": "- PageIndex Chat: The first human-like document-analysis agent platform built for professional long documents. Can also be integrated via MCP or API (beta). - PageIndex Framework: Introduces the PageIndex framework — an agentic, in-context tree index that enables LLMs to perform reasoning-based,...",
       "created_at": "2025-04-01",
-      "updated_at": "2026-01-21",
+      "updated_at": "2026-01-22",
       "homepage": "https://pageindex.ai",
       "license": "MIT",
       "open_issues": 44,
-      "watchers": 5964
+      "watchers": 6165
     }
   ]
 }
