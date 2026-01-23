@@ -1,18 +1,18 @@
 {
-  "update_time": "2026-01-23 00:01",
+  "update_time": "2026-01-23 12:01",
   "repos": [
     {
       "name": "AionUi",
       "name_cn": "AionUi",
       "description_original": "Free, local, open-source Cowork for Gemini CLI, Claude Code, Codex, Opencode, Qwen Code, Goose Cli, Auggie, and more | 🌟 Star if you like it!",
-      "description_cn": "一款基于 TypeScript 开发的 AI 命令行工具，今日新增 562 星，今日热度爆棚",
+      "description_cn": "一款基于 TypeScript 开发的 AI 命令行工具，今日新增 554 星，今日热度爆棚",
       "domain": "命令行工具",
       "target_audience": "AI 开发者和研究人员",
       "problem_solved": "快速上手 AI 相关开发",
       "language": "TypeScript",
-      "stars_today": 562,
-      "total_stars": 9034,
-      "forks": 701,
+      "stars_today": 554,
+      "total_stars": 9353,
+      "forks": 724,
       "url": "https://github.com/iOfficeAI/AionUi",
       "owner": "iOfficeAI",
       "avatar_url": "https://github.com/iOfficeAI.png?size=80",
@@ -25,11 +25,11 @@
       ],
       "readme_excerpt": "✨ What Can AionUi Do? · 🤔 Why Choose AionUi? · ✨ Core Features · 🚀 Quick Start · 📖 Detailed Usage Guide · 💬 Community _AionUi includes Gemini CLI built-in, ready to use out of the box with no extra installation. If you already have command-line tools like Gemini CLI, Claude Code, CodeX, Qwen Code,...",
       "created_at": "2025-08-07",
-      "updated_at": "2026-01-22",
+      "updated_at": "2026-01-23",
       "homepage": "https://www.aionui.com",
       "license": "Apache-2.0",
-      "open_issues": 38,
-      "watchers": 9034
+      "open_issues": 41,
+      "watchers": 9353
     },
     {
       "name": "goose",
@@ -40,9 +40,9 @@
       "target_audience": "NLP 开发者、对话系统研发人员",
       "problem_solved": "快速接入和使用大语言模型",
       "language": "Rust",
-      "stars_today": 334,
-      "total_stars": 26990,
-      "forks": 2463,
+      "stars_today": 347,
+      "total_stars": 27221,
+      "forks": 2472,
       "url": "https://github.com/block/goose",
       "owner": "block",
       "avatar_url": "https://github.com/block.png?size=80",
@@ -51,11 +51,11 @@
       ],
       "readme_excerpt": "_a local, extensible, open source AI agent that automates engineering tasks_ goose is your on-machine AI agent, capable of automating complex development tasks from start to finish. More than just code suggestions, goose can build entire projects from scratch, write and execute code, debug...",
       "created_at": "2024-08-23",
-      "updated_at": "2026-01-22",
+      "updated_at": "2026-01-23",
       "homepage": "https://block.github.io/goose/",
       "license": "Apache-2.0",
-      "open_issues": 301,
-      "watchers": 26990
+      "open_issues": 299,
+      "watchers": 27221
     },
     {
       "name": "agent-lightning",
@@ -66,9 +66,9 @@
       "target_audience": "AI 应用开发者、自动化工程师",
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "Python",
-      "stars_today": 333,
-      "total_stars": 11414,
-      "forks": 928,
+      "stars_today": 327,
+      "total_stars": 11500,
+      "forks": 932,
       "url": "https://github.com/microsoft/agent-lightning",
       "owner": "microsoft",
       "avatar_url": "https://github.com/microsoft.png?size=80",
@@ -79,13 +79,13 @@
         "mlops",
         "reinforcement-learning"
       ],
-      "readme_excerpt": "The absolute trainer to light up AI agents. Join our Discord community to connect with other users and contributors. - Turn your agent into an optimizable beast with ZERO CODE CHANGE (almost)! 💤 - Build with ANY agent framework (LangChain, OpenAI Agent SDK, AutoGen, CrewAI, Microsoft Agent...",
+      "readme_excerpt": "",
       "created_at": "2025-06-18",
-      "updated_at": "2026-01-22",
+      "updated_at": "2026-01-23",
       "homepage": "https://microsoft.github.io/agent-lightning/",
       "license": "MIT",
       "open_issues": 116,
-      "watchers": 11414
+      "watchers": 11500
     },
     {
       "name": "dexter",
@@ -96,20 +96,20 @@
       "target_audience": "AI 应用开发者、自动化工程师",
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "TypeScript",
-      "stars_today": 272,
-      "total_stars": 8235,
-      "forks": 1030,
+      "stars_today": 248,
+      "total_stars": 8491,
+      "forks": 1049,
       "url": "https://github.com/virattt/dexter",
       "owner": "virattt",
       "avatar_url": "https://github.com/virattt.png?size=80",
       "topics": [],
       "readme_excerpt": "Dexter is an autonomous financial research agent that thinks, plans, and learns as it works. It performs analysis using task planning, self-reflection, and real-time market data. Think Claude Code, but built specifically for financial research. Dexter takes complex financial questions and turns...",
       "created_at": "2025-10-14",
-      "updated_at": "2026-01-22",
+      "updated_at": "2026-01-23",
       "homepage": "",
       "license": "",
-      "open_issues": 28,
-      "watchers": 8235
+      "open_issues": 30,
+      "watchers": 8491
     },
     {
       "name": "mastra",
@@ -120,9 +120,9 @@
       "target_audience": "AI 应用开发者、自动化工程师",
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "TypeScript",
-      "stars_today": 213,
-      "total_stars": 20066,
-      "forks": 1443,
+      "stars_today": 227,
+      "total_stars": 20212,
+      "forks": 1449,
       "url": "https://github.com/mastra-ai/mastra",
       "owner": "mastra-ai",
       "avatar_url": "https://github.com/mastra-ai.png?size=80",
@@ -135,11 +135,11 @@
       ],
       "readme_excerpt": "Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack. It includes everything you need to go from early prototypes to production-ready applications. Mastra integrates with frontend and backend frameworks like React, Next.js, and Node, or you can deploy...",
       "created_at": "2024-08-06",
-      "updated_at": "2026-01-22",
+      "updated_at": "2026-01-23",
       "homepage": "https://mastra.ai",
       "license": "NOASSERTION",
-      "open_issues": 320,
-      "watchers": 20066
+      "open_issues": 328,
+      "watchers": 20212
     }
   ]
 }
