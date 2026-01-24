@@ -102,12 +102,29 @@
 
             container.innerHTML = items.map((repo, index) => {
                 // Adapt fields
-                const ownerLogin = repo.owner; 
-                const avatarUrl = repo.avatar_url || `https://github.com/${ownerLogin}.png`;
-                const description = repo.description_cn || repo.description_original || 'No description';
+                let ownerLogin = repo.owner; 
+                let name = repo.name;
+                let avatarUrl = repo.avatar_url || `https://github.com/${ownerLogin}.png`;
+                let description = repo.description_cn || repo.description_original || repo.description || 'No description';
+                let repoUrl = repo.html_url || repo.url;
                 
+                // Fallback for full_name
+                if (!name && repo.full_name) {
+                    const parts = repo.full_name.split('/');
+                    if (parts.length >= 2) {
+                        ownerLogin = ownerLogin || parts[0].trim();
+                        name = parts[1].trim();
+                    } else {
+                        name = repo.full_name;
+                    }
+                }
+                if (!ownerLogin) ownerLogin = 'unknown';
+                if (!avatarUrl.startsWith('http')) avatarUrl = `https://github.com/${ownerLogin}.png`;
+
                 // Format numbers
-                const starsTotal = (repo.total_stars || 0).toLocaleString();
+                let starsTotal = repo.total_stars || repo.stargazers_count || 0;
+                if (typeof starsTotal !== 'string') starsTotal = starsTotal.toLocaleString();
+                
                 const starsToday = repo.stars_today || 0;
                 
                 return `
@@ -119,7 +136,7 @@
                             </div>
                             <div>
                                 <h2 class="text-lg font-semibold text-github-accent hover:underline truncate max-w-[200px]">
-                                    <a href="${repo.url}" target="_blank">${repo.name}</a>
+                                    <a href="${repoUrl}" target="_blank">${name}</a>
                                 </h2>
                                 <div class="text-xs text-github-muted">${ownerLogin}</div>
                             </div>
