@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-02-06 00:01",
+  "update_time": "2026-02-06 12:01",
   "repos": [
     {
       "name": "claude-mem",
@@ -10,9 +10,9 @@
       "target_audience": "AI 应用开发者、自动化工程师",
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "TypeScript",
-      "stars_today": 1899,
-      "total_stars": 23479,
-      "forks": 1555,
+      "stars_today": 1930,
+      "total_stars": 23799,
+      "forks": 1574,
       "url": "https://github.com/thedotmack/claude-mem",
       "owner": "thedotmack",
       "avatar_url": "https://github.com/thedotmack.png?size=80",
@@ -25,11 +25,11 @@
       ],
       "readme_excerpt": "Official $CMEM Links: Claude-Mem seamlessly preserves context across sessions by automatically capturing tool usage observations, generating semantic summaries, and making them available to future sessions. This enables Claude to maintain continuity of knowledge about projects even after sessions...",
       "created_at": "2025-08-31",
-      "updated_at": "2026-02-05",
+      "updated_at": "2026-02-06",
       "homepage": "https://claude-mem.ai",
       "license": "NOASSERTION",
-      "open_issues": 246,
-      "watchers": 23479
+      "open_issues": 211,
+      "watchers": 23799
     },
     {
       "name": "superpowers",
@@ -40,20 +40,20 @@
       "target_audience": "AI 应用开发者、自动化工程师",
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "Shell",
-      "stars_today": 893,
-      "total_stars": 45105,
-      "forks": 3419,
+      "stars_today": 887,
+      "total_stars": 45518,
+      "forks": 3440,
       "url": "https://github.com/obra/superpowers",
       "owner": "obra",
       "avatar_url": "https://github.com/obra.png?size=80",
       "topics": [],
       "readme_excerpt": "Superpowers is a complete software development workflow for your coding agents, built on top of a set of composable \"skills\" and some initial instructions that make sure your agent uses them. It starts from the moment you fire up your coding agent. As soon as it sees that you're building something,...",
       "created_at": "2025-10-09",
-      "updated_at": "2026-02-05",
+      "updated_at": "2026-02-06",
       "homepage": "",
       "license": "MIT",
-      "open_issues": 135,
-      "watchers": 45105
+      "open_issues": 101,
+      "watchers": 45518
     },
     {
       "name": "UI-TARS-desktop",
@@ -64,9 +64,9 @@
       "target_audience": "AI 应用开发者、自动化工程师",
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "TypeScript",
-      "stars_today": 862,
-      "total_stars": 26557,
-      "forks": 2598,
+      "stars_today": 566,
+      "total_stars": 26805,
+      "forks": 2622,
       "url": "https://github.com/bytedance/UI-TARS-desktop",
       "owner": "bytedance",
       "avatar_url": "https://github.com/bytedance.png?size=80",
@@ -79,11 +79,11 @@
       ],
       "readme_excerpt": "English | 简体中文 It primarily ships with a <a href=\"https://agent-tars.com/guide/basic/cli.html\" target=\"_blank\">CLI</a> and <a href=\"https://agent-tars.com/guide/basic/web-ui.html\" target=\"_blank\">Web UI</a> for usage. It aims to provide a workflow that is closer to human-like task completion...",
       "created_at": "2025-01-19",
-      "updated_at": "2026-02-05",
+      "updated_at": "2026-02-06",
       "homepage": "https://agent-tars.com",
       "license": "Apache-2.0",
-      "open_issues": 340,
-      "watchers": 26557
+      "open_issues": 342,
+      "watchers": 26805
     },
     {
       "name": "cognee",
@@ -94,9 +94,9 @@
       "target_audience": "AI 应用开发者、自动化工程师",
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "Python",
-      "stars_today": 69,
-      "total_stars": 11759,
-      "forks": 1154,
+      "stars_today": 74,
+      "total_stars": 11877,
+      "forks": 1160,
       "url": "https://github.com/topoteretes/cognee",
       "owner": "topoteretes",
       "avatar_url": "https://github.com/topoteretes.png?size=80",
@@ -109,24 +109,24 @@
       ],
       "readme_excerpt": "Cognee - Accurate and Persistent AI Memory Use your data to build personalized and dynamic memory for AI Agents. Cognee lets you replace RAG with scalable and modular ECL (Extract, Cognify, Load) pipelines. 🌐 Available Languages Cognee is an open-source tool and platform that transforms your raw...",
       "created_at": "2023-08-16",
-      "updated_at": "2026-02-05",
+      "updated_at": "2026-02-06",
       "homepage": "https://www.cognee.ai",
       "license": "Apache-2.0",
-      "open_issues": 67,
-      "watchers": 11759
+      "open_issues": 65,
+      "watchers": 11877
     },
     {
       "name": "trivy",
       "name_cn": "trivy",
       "description_original": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
-      "description_cn": "一款基于 Go 开发的 AI 编程辅助工具，今日新增 45 星",
+      "description_cn": "一款基于 Go 开发的 AI 编程辅助工具，今日新增 25 星",
       "domain": "AI 开源项目",
       "target_audience": "AI 开发者和研究人员",
       "problem_solved": "快速上手 AI 相关开发",
       "language": "Go",
-      "stars_today": 45,
-      "total_stars": 31309,
-      "forks": 2907,
+      "stars_today": 25,
+      "total_stars": 31396,
+      "forks": 2912,
       "url": "https://github.com/aquasecurity/trivy",
       "owner": "aquasecurity",
       "avatar_url": "https://github.com/aquasecurity.png?size=80",
@@ -139,11 +139,11 @@
       ],
       "readme_excerpt": "[📖 Documentation][docs] Trivy ([pronunciation][pronunciation]) is a comprehensive and versatile security scanner. Trivy has scanners that look for security issues, and targets where it can find those issues. Targets (what Trivy can scan): - Git Repository (remote) - Virtual Machine Image Scanners...",
       "created_at": "2019-04-11",
-      "updated_at": "2026-02-05",
+      "updated_at": "2026-02-06",
       "homepage": "https://trivy.dev",
       "license": "Apache-2.0",
       "open_issues": 212,
-      "watchers": 31309
+      "watchers": 31396
     }
   ]
 }
