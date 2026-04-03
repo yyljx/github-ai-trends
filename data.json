@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-04-03 00:01",
+  "update_time": "2026-04-03 12:01",
   "repos": [
     {
       "name": "oh-my-codex",
@@ -10,33 +10,33 @@
       "target_audience": "AI 应用开发者、自动化工程师",
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "TypeScript",
-      "stars_today": 2852,
-      "total_stars": 10673,
-      "forks": 1010,
+      "stars_today": 2867,
+      "total_stars": 12141,
+      "forks": 1116,
       "url": "https://github.com/Yeachan-Heo/oh-my-codex",
       "owner": "Yeachan-Heo",
       "avatar_url": "https://github.com/Yeachan-Heo.png?size=80",
       "topics": [],
       "readme_excerpt": "Website: https://yeachan-heo.github.io/oh-my-codex-website/ Docs: Getting Started · Agents · Skills · Integrations · Demo · OpenClaw guide OMX is a workflow layer for OpenAI Codex CLI. It keeps Codex as the execution engine and makes it easier to: - start a stronger Codex session by default - run...",
       "created_at": "2026-02-02",
-      "updated_at": "2026-04-02",
+      "updated_at": "2026-04-03",
       "homepage": "",
       "license": "",
-      "open_issues": 5,
-      "watchers": 10673
+      "open_issues": 10,
+      "watchers": 12142
     },
     {
       "name": "system_prompts_leaks",
       "name_cn": "system_prompts_leaks",
       "description_original": "Extracted system prompts from ChatGPT (GPT-5.4, GPT-5.3, Codex), Claude (Opus 4.6, Sonnet 4.6, Claude Code), Gemini (3.1 Pro, 3 Flash, CLI), Grok (4.2, 4), Perplexity, and more. Updated regularly.",
-      "description_cn": "一款基于 Unknown 开发的命令行工具，今日新增 323 星，广受开发者好评",
+      "description_cn": "一款基于 Unknown 开发的命令行工具，今日新增 306 星，广受开发者好评",
       "domain": "提示词工程 / 命令行工具",
       "target_audience": "AI 开发者和研究人员",
       "problem_solved": "快速上手 AI 相关开发",
       "language": "Unknown",
-      "stars_today": 323,
-      "total_stars": 35920,
-      "forks": 5948,
+      "stars_today": 306,
+      "total_stars": 36580,
+      "forks": 6048,
       "url": "https://github.com/asgeirtj/system_prompts_leaks",
       "owner": "asgeirtj",
       "avatar_url": "https://github.com/asgeirtj.png?size=80",
@@ -49,11 +49,11 @@
       ],
       "readme_excerpt": "Extracted system prompts, system messages, and developer instructions from popular AI chatbots and coding assistants — ChatGPT (GPT-5.4, GPT-5.3, Codex), Claude (Opus 4.6, Sonnet 4.6, Claude Code), Gemini (3.1 Pro, 3 Flash, Gemini CLI), Grok (4.2, 4), Perplexity, and more. Updated regularly with...",
       "created_at": "2025-05-03",
-      "updated_at": "2026-04-02",
+      "updated_at": "2026-04-03",
       "homepage": "",
       "license": "",
-      "open_issues": 18,
-      "watchers": 35920
+      "open_issues": 21,
+      "watchers": 36580
     }
   ]
 }
