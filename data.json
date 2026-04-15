@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-04-15 00:01",
+  "update_time": "2026-04-15 12:01",
   "repos": [
     {
       "name": "andrej-karpathy-skills",
@@ -10,20 +10,20 @@
       "target_audience": "NLP 开发者、对话系统研发人员",
       "problem_solved": "快速接入和使用大语言模型",
       "language": "Unknown",
-      "stars_today": 9230,
-      "total_stars": 31092,
-      "forks": 2551,
+      "stars_today": 9263,
+      "total_stars": 35156,
+      "forks": 2884,
       "url": "https://github.com/forrestchang/andrej-karpathy-skills",
       "owner": "forrestchang",
       "avatar_url": "https://github.com/forrestchang.png?size=80",
       "topics": [],
       "readme_excerpt": "> Looking for a managed agents platform? Check out Multica — an open-source platform for running and managing coding agents with reusable skills. A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls. > \"The models make wrong...",
       "created_at": "2026-01-27",
-      "updated_at": "2026-04-14",
+      "updated_at": "2026-04-15",
       "homepage": "",
       "license": "",
-      "open_issues": 50,
-      "watchers": 31092
+      "open_issues": 59,
+      "watchers": 35156
     },
     {
       "name": "hermes-agent",
@@ -34,9 +34,9 @@
       "target_audience": "AI 应用开发者、自动化工程师",
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "Python",
-      "stars_today": 8282,
-      "total_stars": 83301,
-      "forks": 11186,
+      "stars_today": 8301,
+      "total_stars": 85548,
+      "forks": 11586,
       "url": "https://github.com/NousResearch/hermes-agent",
       "owner": "NousResearch",
       "avatar_url": "https://github.com/NousResearch.png?size=80",
@@ -49,11 +49,11 @@
       ],
       "readme_excerpt": "The self-improving AI agent built by Nous Research. It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions....",
       "created_at": "2025-07-22",
-      "updated_at": "2026-04-14",
+      "updated_at": "2026-04-15",
       "homepage": "https://hermes-agent.nousresearch.com",
       "license": "MIT",
-      "open_issues": 4232,
-      "watchers": 83301
+      "open_issues": 4381,
+      "watchers": 85548
     },
     {
       "name": "claude-mem",
@@ -64,9 +64,9 @@
       "target_audience": "AI 应用开发者、自动化工程师",
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "TypeScript",
-      "stars_today": 2979,
-      "total_stars": 55053,
-      "forks": 4411,
+      "stars_today": 2997,
+      "total_stars": 56109,
+      "forks": 4507,
       "url": "https://github.com/thedotmack/claude-mem",
       "owner": "thedotmack",
       "avatar_url": "https://github.com/thedotmack.png?size=80",
@@ -79,11 +79,11 @@
       ],
       "readme_excerpt": "src=\"https://raw.githubusercontent.com/thedotmack/claude-mem/main/docs/public/cm-preview.gif\" alt=\"Claude-Mem Preview\" media=\"(prefers-color-scheme: dark)\" srcset=\"https://api.star-history.com/image?repos=thedotmack/claude-mem&type=date&theme=dark&legend=top-left\" media=\"(prefers-color-scheme:...",
       "created_at": "2025-08-31",
-      "updated_at": "2026-04-14",
+      "updated_at": "2026-04-15",
       "homepage": "https://claude-mem.ai",
       "license": "NOASSERTION",
-      "open_issues": 256,
-      "watchers": 55053
+      "open_issues": 244,
+      "watchers": 56109
     },
     {
       "name": "claude-code-best-practice",
@@ -94,9 +94,9 @@
       "target_audience": "AI 应用开发者、自动化工程师",
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "HTML",
-      "stars_today": 2569,
-      "total_stars": 43279,
-      "forks": 4141,
+      "stars_today": 2583,
+      "total_stars": 44080,
+      "forks": 4221,
       "url": "https://github.com/shanraisshan/claude-code-best-practice",
       "owner": "shanraisshan",
       "avatar_url": "https://github.com/shanraisshan.png?size=80",
@@ -109,11 +109,11 @@
       ],
       "readme_excerpt": "from vibe coding to agentic engineering - practice makes claude perfect Boris Cherny on X (<a href=\"https://x.com/bcherny/status/2007179832300581177\">tweet 1</a> · <a href=\"https://x.com/bcherny/status/2017742741636321619\">tweet 2</a> · <a...",
       "created_at": "2025-10-31",
-      "updated_at": "2026-04-14",
+      "updated_at": "2026-04-15",
       "homepage": "",
       "license": "MIT",
       "open_issues": 11,
-      "watchers": 43279
+      "watchers": 44080
     },
     {
       "name": "superpowers",
@@ -124,20 +124,20 @@
       "target_audience": "AI 应用开发者、自动化工程师",
       "problem_solved": "构建自主决策的 AI 智能体",
       "language": "Shell",
-      "stars_today": 1928,
-      "total_stars": 151825,
-      "forks": 13168,
+      "stars_today": 1919,
+      "total_stars": 152636,
+      "forks": 13235,
       "url": "https://github.com/obra/superpowers",
       "owner": "obra",
       "avatar_url": "https://github.com/obra.png?size=80",
       "topics": [],
       "readme_excerpt": "Superpowers is a complete software development workflow for your coding agents, built on top of a set of composable \"skills\" and some initial instructions that make sure your agent uses them. It starts from the moment you fire up your coding agent. As soon as it sees that you're building something,...",
       "created_at": "2025-10-09",
-      "updated_at": "2026-04-14",
+      "updated_at": "2026-04-15",
       "homepage": "",
       "license": "MIT",
-      "open_issues": 290,
-      "watchers": 151826
+      "open_issues": 285,
+      "watchers": 152637
     },
     {
       "name": "ai-hedge-fund",
@@ -149,19 +149,19 @@
       "problem_solved": "快速上手 AI 相关开发",
       "language": "Python",
       "stars_today": 1007,
-      "total_stars": 53865,
-      "forks": 9346,
+      "total_stars": 54313,
+      "forks": 9418,
       "url": "https://github.com/virattt/ai-hedge-fund",
       "owner": "virattt",
       "avatar_url": "https://github.com/virattt.png?size=80",
       "topics": [],
       "readme_excerpt": "This is a proof of concept for an AI-powered hedge fund.  The goal of this project is to explore the use of AI to make trading decisions.  This project is for educational purposes only and is not intended for real trading or investment. This system employs several agents working together: 1. Aswath...",
       "created_at": "2024-11-29",
-      "updated_at": "2026-04-14",
+      "updated_at": "2026-04-15",
       "homepage": "",
       "license": "",
-      "open_issues": 103,
-      "watchers": 53865
+      "open_issues": 105,
+      "watchers": 54313
     }
   ]
 }
